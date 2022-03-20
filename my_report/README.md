@@ -1,7 +1,7 @@
 # Lesson: Interaction Design
 
-### First and Last Name: xxx
-### University Registration Number: dpsdxxxxx
+### First and Last Name: Thanasis Slavidis
+### University Registration Number: dpsd19120
 ### GitHub Personal Profile: xxx
 ### Augmented Reality Personal Repository: xxx
 
