@@ -11,7 +11,7 @@
 
 
 # 1st Deliverable
-* At first, I downloaded Atom and I linked my GitHub account so I could adjust the code. I found the code for the other two shapes, the sphere and the cylinder. Then I adjusted the side of the two shapes and at last I found the code to enter the voice and the snow. For the voice, I changed some commands to 'start' - 'stop", to start and stop snowing with the shapes. 
+* At first, I downloaded Atom and I linked my GitHub account so I could adjust the code. I found the code for the other two shapes, the sphere and the cylinder. Then I entered the code for the other two shapes(cylinder, sphere) and at last I found the code from the links to enter the voice and the snow. For the voice, I changed some commands to 'start' - 'stop", to start and stop snowing with the shapes. 
 
 
 # 2nd Deliverable
