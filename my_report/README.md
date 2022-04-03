@@ -24,4 +24,4 @@
 
 
 # Sources
-A-Frame Library , https://www.npmjs.com/package/aframe-speech-command-component
+A-Frame Library , https://www.npmjs.com/package/aframe-speech-command-component , https://aframe.io/aframe-school/#/
