@@ -19,6 +19,21 @@
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+    <!--Reading my dpsd marker-->
+    <a-marker-camera type='pattern' url='assets/pattern-dpsd.patt'>
+    <a-entity id="box" geometry="primitive: box; width: 1; depth: 1; height: 1" position="-1 0.5 0" material="color: #4CC3D9"></a-entity>
+    </a-marker-camera>
+
+
+
+
+
+
+
+
+
+
         <a-marker preset="hiro">
           <!--Shapes-->
             <a-entity id="box" geometry="primitive: box; width: 1; depth: 1; height: 1" position="-1 0.5 0" material="color: #4CC3D9"></a-entity>
