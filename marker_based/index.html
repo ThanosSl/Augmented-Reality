@@ -24,12 +24,12 @@
     <a-marker-camera type='pattern' url='assets/pattern-dpsd.patt'>
     <!--Showing my name and the image-->
     <a-text value="Thanasis" position="1 0.5 0" ></a-text>
-    <a-text value="Slavidis " position="1 1 0"></a-text>
-    <a-image src="assets/Bruce_Dj.jpg" position="0 0.5 0"></a-image>
+    <a-text value="Slavidis" position="1 1 0"></a-text>
+    <a-image src="assets/Bruce_Dj.jpg" position="1 0.5 0"></a-image>
     </a-marker-camera>
 
 
-    <!--Define the glb hydro asset-->
+    <!--Define the gltf hydro asset-->
     <a-assets>
     <a-asset-item id="hydro" src="assets/Hydrogen.gltf"></a-asset-item>
     </a-assets>
@@ -40,7 +40,7 @@
     </a-marker>
 
 
-    <!--Define the glb oxy asset-->
+    <!--Define the gltf oxy asset-->
     <a-assets>
     <a-asset-item id="oxy" src="assets/Oxygen.gltf"></a-asset-item>
     </a-assets>
@@ -49,6 +49,11 @@
     <!--use your glb oxy model-->
     <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
     </a-marker>
+
+
+
+
+
 
 
    <a-marker preset="hiro">
@@ -63,7 +68,7 @@
              speech-command__show="command: start; type: attribute; attribute: visible; value: true;"
              speech-command__hide="command: stop; type: attribute; attribute: visible; value: false;">
             </a-entity>
-            </a-marker>
+   </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
