@@ -15,7 +15,7 @@
 
 
 # 2nd Deliverable
-* Αρχικά έφτιαξα το εσωτερικό του marker, για το dpsd marker, στην ζωγραφική. Στη συνέχεια, μέσω του [AR.js Marker Training] (https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) έβαλα τις jpg εικόνες του dpsd, του οξυγόνου, του υδρογόνου (οι οποίες υπήρχαν ήδη) και έφτιαξα τα markers. Έπειτα ανέβασα στο φάκελο assets τα παρακάτω: ![This is an image](https://github.com/ThanosSl/Augmented-Reality/tree/main/marker_based/Assets.png) 
+* Αρχικά έφτιαξα το εσωτερικό του marker, για το dpsd marker, στην ζωγραφική. Στη συνέχεια, μέσω του [AR.js Marker Training] (https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) έβαλα τις jpg εικόνες του dpsd, του οξυγόνου, του υδρογόνου (οι οποίες υπήρχαν ήδη) και έφτιαξα τα markers. Έπειτα ανέβασα στο φάκελο assets τα παρακάτω: ![This is an image] (https://github.com/ThanosSl/Augmented-Reality/tree/main/marker_based/Assets.png) 
 
 # 3rd Deliverable 
 
