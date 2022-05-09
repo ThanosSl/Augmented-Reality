@@ -15,7 +15,7 @@
 
 
 # 2nd Deliverable
-* Αρχικά έφτιαξα το εσωτερικό του marker, για το dpsd marker, στην ζωγραφική. Στη συνέχεια, μέσω του [AR.js Marker Training] (https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) έβαλα τις jpg εικόνες του dpsd, του οξυγόνου, του υδρογόνου (οι οποίες υπήρχαν ήδη) και έφτιαξα τα markers. Έπειτα ανέβασα στο φάκελο assets τα παρακάτω: ![This is an image](/marker_based/Assets.png) ώστε να τα εντάξω στον κώδικά μου. Μετά έφτιαξα τα δύο άτομα υδρογόνου και οξυγόνου στο blender: ![This is an image](/marker_based/Hydrogen_Atom_Blnder.png) ![This is an image](/marker_based/Oxygen_Atom_Blnder.png) , τα αποθήκευσα σαν .gltf αρχείο και τα πέρασα στον κώδικα.Έτσι λοιπόν έκανα τα απαραίτητα adjustments στον κώδικα έτσι ώστε να εμφανίζει το κάθε τι όταν πρέπει, ανάλογα με το κάθε marker. 
+* Αρχικά έφτιαξα το εσωτερικό του marker, για το dpsd marker, στην ζωγραφική. Στη συνέχεια, μέσω του [AR.js Marker Training] (https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) έβαλα τις jpg εικόνες του dpsd, του οξυγόνου, του υδρογόνου (οι οποίες υπήρχαν ήδη) και έφτιαξα τα markers. Έπειτα ανέβασα στο φάκελο assets τα παρακάτω: ![This is an image](/marker_based/Assets.png) ώστε να τα εντάξω στον κώδικά μου. Μετά έφτιαξα τα δύο άτομα υδρογόνου και οξυγόνου στο blender: ![This is an image](/marker_based/Hydrogen_Atom_Blnder.png) ![This is an image(/marker_based/Oxygen_Atom_Blnder.png) , τα αποθήκευσα σαν .gltf αρχείο και τα πέρασα στον κώδικα.Έτσι λοιπόν έκανα τα απαραίτητα adjustments στον κώδικα έτσι ώστε να εμφανίζει το κάθε τι όταν πρέπει, ανάλογα με το κάθε marker. 
 
 # 3rd Deliverable 
 
