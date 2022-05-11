@@ -72,6 +72,7 @@
 
 <!--Assets hydrogen, oxygen, water-->
   <a-asset-item id="hydrogen_asset" src="assets/Hydrogen.gltf"></a-asset-item>
+
   <a-asset>
     <a-asset-item id="oxygen_asset" src="assets/Oxygen.gltf"></a-asset-item>
     <a-asset-item id="water_asset" src="assets/H2O.gltf"></a-asset-item>
@@ -79,11 +80,12 @@
 
   <!--Markers hydrogen, oxygen-->
   <a-marker id="marker1" type="pattern" url="assets/pattern-card-H.patt">
-    <a-entity id="hydrogen" gltf-model="#hydrogen_asset" scale= "0.4 0.4 0.4"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000 easing: linear;"></a-entity>
-    <a-entity id="water" gltf-model="#water_asset" scale= "0.5 0.5 0.5"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000 easing: linear;"></a-entity>
+    <a-entity id="oxygen" gltf-model="#oxygen_asset" scale= "0.7 0.7 0.7"  position="0 0.5 0"></a-entity>
+    <a-entity id="water" gltf-model="#water_asset" scale= "0.5 0.5 0.5"  position="0 0.5 0"></a-entity>
   </a-marker>
+
   <a-marker id="marker2" type="pattern" url="assets/pattern-card-O.patt">
-    <a-entity id="oxygen" gltf-model="#oxygen_asset" scale= "0.7 0.7 0.7"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000 easing: linear;"></a-entity>
+    <a-entity id="hydrogen" gltf-model="#hydrogen_asset" scale= "0.4 0.4 0.4"  position="0 0.5 0"></a-entity>
   </a-marker>
 
 
