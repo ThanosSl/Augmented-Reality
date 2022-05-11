@@ -14,6 +14,48 @@
 
 
   <body style="margin : 0px; overflow: hidden;">
+    <script>
+    AFRAME.registerComponent("marker-distance", {
+        init: function()
+        {
+        this.h = document.querySelector("#hydro")
+        this.o = document.querySelector("#oxy")
+        this.water = document.querySelector("#H2O")
+        this.markerH = document.querySelector("#hydro")
+        this.markerO = document.querySelector("#oxy")
+      },
+
+      tick: function () {
+
+              var markerHPos, markerOPos, distance
+              markerHPos = new THREE.Vector3();
+              this.markerH.object3D.getWorldPosition(markerHPos);
+
+              markerOPos = new THREE.Vector3();
+              this.markerO.object3D.getWorldPosition(markerOPos);
+
+              //distance
+              distance = markerHPos.distanceTo(markerOPos);
+
+              if (distance<2){
+                this.water.setAttribute("visible", true)
+                this.h.setAttribute("visible", false)
+                this.o.setAttribute("visible", false)
+                this.card1.setAttribute("visible", false)
+                this.card2.setAttribute("visible", true)
+              }
+              else{
+                this.water.setAttribute("visible", false)
+                this.h.setAttribute("visible", true)
+                this.o.setAttribute("visible", true)
+                this.card1.setAttribute("visible", true)
+                this.card2.setAttribute("visible", false)
+              }
+            }
+          });
+
+    </script>
+
     <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
@@ -39,8 +81,8 @@
     </a-assets>
     <!--Reading and showing the H atom-->
     <a-marker type='pattern' url='assets/pattern-card-H.patt'>
-    <!--use the glb hydro model-->
-    <a-entity gltf-model="#hydro" scale= "0.2 0.2 0.2";></a-entity>
+      <!--use the glb hydro model-->
+      <a-entity gltf-model="#hydro" scale= "0.2 0.2 0.2";></a-entity>
     </a-marker>
 
 
@@ -50,12 +92,11 @@
     </a-assets>
     <!--Reading and showing the O atom-->
     <a-marker type='pattern' url='assets/pattern-card-O.patt'>
-    <!--use the glb oxy model-->
-    <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
+      <!--use the glb oxy model-->
+      <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
+      <!--Making H2O-->
+      <a-entity id="H2O" gltf-model="assets/H2O.gltf"></a-entity>
     </a-marker>
-
-
-
 
 
 
