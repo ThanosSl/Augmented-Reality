@@ -21,29 +21,31 @@
         this.hydro = document.querySelector("#hydro")
         this.oxy = document.querySelector("#oxy")
         this.water = document.querySelector("#water")
+        this.marker1 = document.querySelector('#marker1')
+        this.marker2 = document.querySelector('#marker2')
       },
 
       tick: function () {
 
-              var markerHPos, markerOPos, distance
-              markerHPos = new THREE.Vector3();
-              this.markerhydro.object3D.getWorldPosition(markerHPos);
+              var marker1Pos, marker2Pos, distance
+              marker1Pos = new THREE.Vector3();
+              this.marker1.object3D.getWorldPosition(markerHPos);
 
-              markerOPos = new THREE.Vector3();
-              this.markerO.object3D.getWorldPosition(markerOPos);
+              marker2Pos = new THREE.Vector3();
+              this.marker2.object3D.getWorldPosition(markerOPos);
 
               //distance
-              distance = markerHPos.distanceTo(markerOPos);
+              distance = marker1Pos.distanceTo(markerOPos);
 
               if (distance<2){
-                this.water.setAttribute("visible", true)
                 this.hydro.setAttribute("visible", false)
                 this.oxy.setAttribute("visible", false)
+                this.water.setAttribute("visible", true)
               }
               else{
+                this.hydro.setAttribute("visible",true)
+                this.oxy.setAttribute("visible",true)
                 this.water.setAttribute("visible", false)
-                this.hydro.setAttribute("visible", true)
-                this.oxy.setAttribute("visible", true)
               }
             }
           });
@@ -59,39 +61,31 @@
 
 <!--Deliverable_2-->
     <!--Reading my dpsd marker-->
-    <a-marker-camera type='pattern' url='assets/pattern-dpsd.patt'>
+    <a-marker type='pattern' url='assets/pattern-dpsd.patt'>
     <!--Showing my name and the image-->
     <a-entity rotation="-90 0 0" position="0 0 0" >
       <a-text value="Thanasis" align="center" position="0 -0.85 0" side="double"></a-text>
       <a-text value="Slavidis" position="0 -0.65 0" align="center" side="double"></a-text>
       <a-image src="assets/Bruce_Dj.jpg" position="0 0 0" side="double" width="1" height="1"></a-image>
     </a-entity>
-    </a-marker-camera>
-
-
-    <!--Define the gltf hydro asset-->
-    <a-assets>
-     <a-asset-item id="hydro" src="assets/Hydrogen.gltf"></a-asset-item>
-    </a-assets>
-    <!--Reading and showing the H atom-->
-    <a-marker type='pattern' url='assets/pattern-card-H.patt'>
-      <!--use the glb hydro model-->
-      <a-entity gltf-model="#hydro" scale= "0.2 0.2 0.2";></a-entity>
     </a-marker>
 
+<!--Assets hydrogen, oxygen, water-->
+  <a-asset-item id="hydrogen_asset" src="assets/Hydrogen.gltf"></a-asset-item>
+  <a-asset>
+    <a-asset-item id="oxygen_asset" src="assets/Oxygen.gltf"></a-asset-item>
+    <a-asset-item id="water_asset" src="assets/H2O.gltf"></a-asset-item>
+  </a-asset>
 
-    <!--Define the gltf oxy asset-->
-    <a-assets>
-     <a-asset-item id="oxy" src="assets/Oxygen.gltf"></a-asset-item>
-    </a-assets>
-    <!--Reading and showing the O atom-->
-    <a-marker type='pattern' url='assets/pattern-card-O.patt'>
-      <!--use the glb oxy model-->
-      <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
-      <!--Making H2O-->
-      <a-asset-item id='water' src="assets/H2O.gltf"></a-asset-item>
-      <a-entity id="H2O" gltf-model="#water"></a-entity>
-    </a-marker>
+  <!--Markers-->
+  <a-marker id="marker1" type="pattern" url="assets/pattern-card-H.patt">
+    <a-entity id="hydro" gltf-model="#hydrogen_asset" scale= "0.7 0.7 0.7"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000 easing: linear;"></a-entity>
+    <a-entity id="water" gltf-model="#water_asset" scale= "0.5 0.5 0.5"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000 easing: linear;"></a-entity>
+  </a-marker>
+  <a-marker id="marker2" type="pattern" url="assets/pattern-card-O.patt">
+    <a-entity id="oxy" gltf-model="#oxygen_asset" scale= "0.7 0.7 0.7"  position="0 0.6 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000 easing: linear;"></a-entity>
+  </a-marker>
+
 
 
 
