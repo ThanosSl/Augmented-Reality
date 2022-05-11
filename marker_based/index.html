@@ -77,7 +77,7 @@
 
     <!--Define the gltf hydro asset-->
     <a-assets>
-     <a-asset-item id="hydro" src="assets/Hydrogen.gltf"></a-asset-item>
+     <a-asset-item id="hydro" src="assets/Hydrogen.gltf" position="0 1 0" scale=".05 .05 .05" animation-mixer="clip: *; loop: repeat; timeScale: 1.5;"></a-asset-item>
     </a-assets>
     <!--Reading and showing the H atom-->
     <a-marker type='pattern' url='assets/pattern-card-H.patt'>
@@ -88,14 +88,14 @@
 
     <!--Define the gltf oxy asset-->
     <a-assets>
-     <a-asset-item id="oxy" src="assets/Oxygen.gltf"></a-asset-item>
+     <a-asset-item id="oxy" src="assets/Oxygen.gltf" position="0 1 0" scale=".09 .09 .09" animation-mixer="clip: *; loop: repeat;"></a-asset-item>
     </a-assets>
     <!--Reading and showing the O atom-->
     <a-marker type='pattern' url='assets/pattern-card-O.patt'>
       <!--use the glb oxy model-->
       <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
       <!--Making H2O-->
-      <a-entity id="H2O" gltf-model="assets/H2O.gltf"></a-entity>
+      <a-entity id="H2O" src="assets/H2O.gltf" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" visible="false"></a-entity>
     </a-marker>
 
 
