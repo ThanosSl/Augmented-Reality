@@ -21,6 +21,7 @@
 * Tα αποθήκευσα σαν .gltf αρχείο και τα πέρασα στον κώδικα. Έτσι λοιπόν έκανα τα απαραίτητα adjustments στον κώδικα έτσι ώστε να εμφανίζει το κάθε τι όταν πρέπει, ανάλογα με το κάθε marker (pattern-dpsd.patt, pattern-card-H.patt, pattern-card-O.patt). 
 
 * Έπειτα, έφτιαξα και ένα animation για το νερό: ![This is an image](https://github.com/ThanosSl/Augmented-Reality/blob/main/marker_based/H2O_Atom_Blender.png) 
+ 
  και προσάρμοσα τον κώδικα για το τρίτο <<υποπαραδοτέο>>, με τη απόσταση των δύο markers, οι οποίοι όταν θα είναι σε απόσταση μικρότερη των 2 μέτρων θα εμφανίζουν το    animation του νερού, ενώ όταν απομακρίνονται θα εμφανίζουν πάλι τα δύο άτομα υδρογόνου και οξυγόνου αντίστοιχα.
 
 # 3rd Deliverable 
@@ -30,4 +31,4 @@
 
 
 # Sources
-A-Frame Library , https://www.npmjs.com/package/aframe-speech-command-component , https://aframe.io/aframe-school/#/ , https://aframe.io/blog/arjs/ , 
+A-Frame Library , https://www.npmjs.com/package/aframe-speech-command-component , https://aframe.io/aframe-school/#/ , https://aframe.io/blog/arjs/ , https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js 
