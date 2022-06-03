@@ -33,7 +33,7 @@
 
 * Για το 2ο υποπαραδοτέο του deliverable 3, κατέβασα την εικόνα της τοποθεσίας που επέλεξα: ![This is an image](https://github.com/ThanosSl/Augmented-Reality/blob/main/location_based/assets/Ermoupolis_Stadium.jpg) 
 
-και την έβαλα στον κώδικα μαζί με ένα text αυτής.
+και την έβαλα στον κώδικα μαζί με ένα text, με το όνομα αυτής.
 # Conclusions
 
 
