@@ -27,7 +27,7 @@
 # 3rd Deliverable 
 * Όσων αφορά το index.html, το αρχείο δηλαδή με αξιοθέατο επιλογής μας, στο location based φάκελο πάντα, αρχικά επέλεξα το 3D model από το [Sketchfab] (https://sketchfab.com/3d-models/christ-the-redeemer-d143e5357efd42529777438d0f72c79c) ![This is an image](https://github.com/ThanosSl/Augmented-Reality/blob/main/location_based/assets/Christ_The_Redeemer_Photo.png) 
  
-* Το κατέβασα ως gltf αρχείο, το έβαλα στον κώδικα και έκανα τις απαραίτητες αλλαγές έτσι ώστε να κλικάρεις πάνω στο 3D μοντέλο και να βγάζει κείμενο με πληροφορίες για αυτό, από [Wikipidia] (https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)).
+* Το κατέβασα ως gltf αρχείο, το έβαλα στον κώδικα και έκανα τις απαραίτητες αλλαγές έτσι ώστε να κλικάρεις πάνω στο 3D μοντέλο και να βγάζει κείμενο με πληροφορίες για αυτό, από [Wikipedia] (https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)).
 
 * Έπίσης, έβαλα και εντολή έτσι ώστε να περιστρέφεται το αγαλματίδιο και τέλος, το έκανα adjust ώστε να φαίνεται καλύτερα στην οθόνη.  
 
