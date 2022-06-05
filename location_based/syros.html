@@ -17,15 +17,15 @@
             arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
         <!--Showing Ermoupolis Stadium-->
-        <a-image src="assets/Ermoupolis_Stadium.jpg" position="0 1 -9" scale="5 5 5" rotation="0 0 0" ></a-image>
+        <a-image gps-entity-place="latitude: 37.444649; longitude: 24.942909"  src="assets/Ermoupolis_Stadium.jpg" position="0 1 -9" scale="5 5 5" rotation="0 0 0" ></a-image>
         <a-text id="text_info" text="Ermoupolis Stadium" position="0 0 -90" color= "#F4D35E" scale="1 1 1" </a-text>
 
 
-        <a-entity gltf-model="#entity" gps-entity-place="latitude: 37.444649; longitude: 24.942909;" > </a-entity>
+        <a-camera rotation-reader gps-camera="latitude: 37.444649; longitude: 24.942909; minDistance: 1; maxDistance: 700;"> </a-camera>
 
 
 
-        <a-camera id="camera" gps-camera rotation-reader> </a-camera>
+        <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
 </html>
